@@ -52,7 +52,7 @@ const useStyles = makeStyles(theme => ({
       </AppBar>
 
        <BottomNavigation value={value} onChange={handleChange} className={classes.stickToBottom}>
-      <BottomNavigationAction label="Recents" value="recents" icon={<RestoreIcon />} />
+      <BottomNavigationAction label="Home" value="recents" icon={<RestoreIcon />} />
       <BottomNavigationAction label="Favorites" value="favorites" icon={<FavoriteIcon />} />
       <BottomNavigationAction label="Nearby" value="nearby" icon={<LocationOnIcon />} />
       <BottomNavigationAction label="Folder" value="folder" icon={<Icon>folder</Icon>} />
