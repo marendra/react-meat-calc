@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
       <AppBar position="static">
         <Toolbar>
              <Typography variant="h6" className={classes.title}>
-            Meat Calc
+            Meat Calculator
           </Typography>
          
         </Toolbar>
