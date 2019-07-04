@@ -53,6 +53,7 @@ const useStyles = makeStyles(theme => ({
   }
 
   return (
+     <BrowserRouter>
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
@@ -65,21 +66,27 @@ const useStyles = makeStyles(theme => ({
 
 <main >
   <Container className={classes.content}>
-    <BrowserRouter>
+   
       <Switch>
         <Route exact path="/" component={utama}/>
+        <Route exact path="/slota" component={slotA}/>
+        <Route exact path="/slotB" component={slotB}/>
+        <Route exact path="/slotC" component={slotC}/>
+        <Route exact path="/slotD" component={slotD}/>
+
       </Switch>
-    </BrowserRouter>
+    
   </Container>
 </main>
 
        <BottomNavigation value={value} onChange={handleChange} className={classes.stickToBottom}>
-      <BottomNavigationAction label="Home" value="recents" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Favorites" value="favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Nearby" value="nearby" icon={<LocationOnIcon />} />
-      <BottomNavigationAction label="Folder" value="folder" icon={<Icon>folder</Icon>} />
+      <BottomNavigationAction component={Link} to={'/'} label="Home" value="recents" icon={<RestoreIcon />} />
+      <BottomNavigationAction component={Link} to={'/slota'} label="Favorites" value="favorites" icon={<FavoriteIcon />} />
+      <BottomNavigationAction component={Link} to={'/slotB'} label="Nearby" value="nearby" icon={<LocationOnIcon />} />
+      <BottomNavigationAction component={Link} to={'/slotC'} label="Folder" value="folder" icon={<Icon>folder</Icon>} />
     </BottomNavigation>
     </div>
+    </BrowserRouter>
   );
   
 }
