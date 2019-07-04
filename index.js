@@ -31,7 +31,9 @@ const useStyles = makeStyles(theme => ({
     bottom: 0,
   },
   content:{
-    flexGrow:1
+    flexGrow:1,
+    marginLeft:'30px',
+    marginTop:'30px'
   }
 }));
 
@@ -55,9 +57,9 @@ const useStyles = makeStyles(theme => ({
         </Toolbar>
       </AppBar>
 
-<main className={classes.content}>
-  <Container>
-  Halo
+<main >
+  <Container className={classes.content}>
+  <h1>Halo</h1>
   </Container>
 </main>
 
