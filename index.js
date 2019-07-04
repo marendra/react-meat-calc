@@ -14,6 +14,12 @@ import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import Container from '@material-ui/core/Container';
+import {BrowserRouter,Switch,Link,Route} from 'react-router-dom';
+import utama from './pages/utama'
+import slotA from './pages/slotA'
+import slotB from './pages/slotB'
+import slotC from './pages/slotC'
+import slotD from './pages/slotD'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -59,7 +65,11 @@ const useStyles = makeStyles(theme => ({
 
 <main >
   <Container className={classes.content}>
-  <h1>Halo</h1>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={utama}/>
+      </Switch>
+    </BrowserRouter>
   </Container>
 </main>
 
