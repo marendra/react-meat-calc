@@ -65,7 +65,7 @@ const useStyles = makeStyles(theme => ({
       </AppBar>
 
 <main >
-  <Container className={classes.content}>
+ 
    
       <Switch>
         <Route exact path="/" component={utama}/>
@@ -76,7 +76,7 @@ const useStyles = makeStyles(theme => ({
 
       </Switch>
     
-  </Container>
+  
 </main>
 
        <BottomNavigation value={value} onChange={handleChange} className={classes.stickToBottom}>
