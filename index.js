@@ -13,6 +13,7 @@ import Icon from '@material-ui/core/Icon';
 import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -29,6 +30,9 @@ const useStyles = makeStyles(theme => ({
     position: 'fixed',
     bottom: 0,
   },
+  content:{
+    flexGrow:1
+  }
 }));
 
  const App = function() {
@@ -50,6 +54,12 @@ const useStyles = makeStyles(theme => ({
          
         </Toolbar>
       </AppBar>
+
+<main className={classes.content}>
+  <Container>
+  Halo
+  </Container>
+</main>
 
        <BottomNavigation value={value} onChange={handleChange} className={classes.stickToBottom}>
       <BottomNavigationAction label="Home" value="recents" icon={<RestoreIcon />} />
