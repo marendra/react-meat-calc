@@ -27,7 +27,7 @@ constructor() {
 
 login (){
   
-  return this.auth.signInWithPopup(provider)
+  return this.auth.signInWithPopup(this.Googleprovider)
 }
 
 }
