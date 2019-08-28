@@ -22,10 +22,11 @@ constructor() {
 		app.initializeApp(config)
 		this.auth = app.auth()
 		this.db = app.firestore()
+    this.Googleprovider = new app.auth.GoogleAuthProvider();
 	}
 
 login (){
-  var provider = new this.auth.GoogleAuthProvider();
+  
   return this.auth.signInWithPopup(provider)
 }
 
