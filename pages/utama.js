@@ -10,6 +10,10 @@ export default function utama (){
   )
   async function login (){
     console.log("got clicked")
-    await Firebase.login 
+   try {
+      await Firebase.login()
+    } catch (error) {
+      alert(error)
+    }
   }
 }
