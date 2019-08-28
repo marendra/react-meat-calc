@@ -9,6 +9,7 @@ export default function utama (){
  </div>
   )
   async function login (){
+    console.log("got clicked")
     await Firebase.login 
   }
 }
