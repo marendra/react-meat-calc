@@ -12,7 +12,7 @@ const config = {
   messagingSenderId: "179482782298",
   appId: "1:179482782298:web:5008e39deb208075"
 };
-var provider = new firebase.auth.GoogleAuthProvider();
+
 
 class Firebase
 {
@@ -25,6 +25,7 @@ constructor() {
 	}
 
 login (){
+  var provider = new this.auth.GoogleAuthProvider();
   return this.auth.signInWithPopup(provider)
 }
 

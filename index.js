@@ -22,7 +22,7 @@ import slotC from './pages/slotC'
 import slotD from './pages/slotD'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import Firebase from "./firebase"
-import 
+import Login from "./login"
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
