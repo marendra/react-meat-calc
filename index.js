@@ -20,7 +20,8 @@ import slotA from './pages/slotA'
 import slotB from './pages/slotB'
 import slotC from './pages/slotC'
 import slotD from './pages/slotD'
-
+import { useAuthState } from 'react-firebase-hooks/auth';
+import Firebase from "./firebase"
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -44,14 +45,25 @@ const useStyles = makeStyles(theme => ({
 }));
 
  const App = function() {
-
+    
     const classes = useStyles();
     const [value, setValue] = React.useState('recents');
+  const [user, initialising, error] = useAuthState(Firebase.auth);
 
+ 
   function handleChange(event, newValue) {
     setValue(newValue);
   }
-
+if (initialising) {
+  console.log(initialising)
+    return (
+      <div>
+        <p>Initialising User...</p>
+      </div>
+    );
+  }
+else{
+  console.log(initialising)
   return (
      <BrowserRouter>
     <div className={classes.root}>
@@ -88,7 +100,8 @@ const useStyles = makeStyles(theme => ({
     </div>
     </BrowserRouter>
   );
-  
+}
+
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));

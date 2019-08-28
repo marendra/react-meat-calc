@@ -3,7 +3,7 @@ import 'firebase/auth'
 import 'firebase/firebase-firestore'
 
 
-const firebaseConfig = {
+const config = {
   apiKey: "AIzaSyAJL-9kvahXg_z-k-4ZDJ-ZTrvz3OTrzbA",
   authDomain: "stokopname.firebaseapp.com",
   databaseURL: "https://stokopname.firebaseio.com",
