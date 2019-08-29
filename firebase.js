@@ -30,6 +30,9 @@ login (){
   return this.auth.signInWithPopup(this.Googleprovider)
 }
 
+logout(){
+  return this.auth.signOut()
+}
 }
 
 

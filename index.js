@@ -63,7 +63,7 @@ if (initialising) {
       </div>
     );
   }
-else{
+else if (user) {
   
   return (
      <BrowserRouter>
