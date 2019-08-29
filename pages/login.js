@@ -14,15 +14,20 @@ export default function Login (){
   }
    
   return (
-    <div>
-    <Grid 
-    container
-  direction="row"
+   <Grid
+  container
+
+  direction="column"
+  alignItems="center"
   justify="center"
-  alignItems="center">
-    <Button variant="contained" onClick={login}>Login</Button>
-    </Grid>
-    </div>
+  style={{ minHeight: '100vh' }}
+>
+
+  <Grid item xs={3}>
+    <Button variant="contained" onClick={Login}>Login </Button>
+  </Grid>   
+
+</Grid> 
 
   )
 }
