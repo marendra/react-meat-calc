@@ -22,7 +22,7 @@ import slotC from './pages/slotC'
 import slotD from './pages/slotD'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import Firebase from "./firebase"
-import Login from "./login"
+import Login from "./pages/login"
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -55,6 +55,9 @@ const useStyles = makeStyles(theme => ({
   function handleChange(event, newValue) {
     setValue(newValue);
   }
+  async function logout(){
+    await Firebase.logout()
+  }
 if (initialising) {
 
     return (
@@ -73,7 +76,7 @@ else if (user) {
              <Typography variant="h6" className={classes.title}>
             Asset Tracker
           </Typography>
-         
+         <Button color="inherit" onClick={logout}>LOG OUT</Button>
         </Toolbar>
       </AppBar>
 
@@ -102,6 +105,8 @@ else if (user) {
     </BrowserRouter>
   );
 }
+else {
+<Login/>}
 
 }
 
