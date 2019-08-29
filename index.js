@@ -76,7 +76,7 @@ else if (user) {
              <Typography variant="h6" className={classes.title}>
             Asset Tracker
           </Typography>
-         <Button variant="contained" color="inherit" onClick={logout}>LOG OUT</Button>
+         <Button variant="contained" onClick={logout}>LOG OUT</Button>
         </Toolbar>
       </AppBar>
 
