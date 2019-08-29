@@ -56,15 +56,15 @@ const useStyles = makeStyles(theme => ({
     setValue(newValue);
   }
 if (initialising) {
-  console.log(initialising)
+
     return (
       <div>
-        <p>Initialising User...</p>
+        <p>Initialising....</p>
       </div>
     );
   }
 else{
-  console.log(initialising)
+  
   return (
      <BrowserRouter>
     <div className={classes.root}>
