@@ -1,6 +1,6 @@
 import React from 'react'
 import Firebase from "../firebase"
-
+import Button from '@material-ui/core/Button';
 export default function Login (){
   async function login (){
     try {
@@ -13,7 +13,7 @@ export default function Login (){
    
   return (
     <div>
-    <button  onClick={login}>Login</button>
+    <Button variant="contained" onClick={login}>Login</Button>
     </div>
 
   )
