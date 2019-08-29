@@ -1,5 +1,5 @@
 import React from 'react'
-import Firebase from "./firebase"
+import Firebase from "../firebase"
 
 export default function Login (){
   async function login (){
