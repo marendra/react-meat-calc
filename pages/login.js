@@ -4,6 +4,8 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
 export default function Login (){
+
+  
   async function login (){
     try {
       await Firebase.login()
@@ -24,7 +26,7 @@ export default function Login (){
 >
 
   <Grid item xs={3}>
-    <Button variant="contained" onClick={Login}>Login </Button>
+    <Button variant="contained" onClick={login}>Login </Button>
   </Grid>   
 
 </Grid> 
