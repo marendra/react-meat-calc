@@ -1,5 +1,6 @@
 import React from 'react'
 import Firebase from '../firebase'
+require('typeface-roboto')
 
 export default function utama (){
   return (
