@@ -23,6 +23,7 @@ import slotD from './pages/slotD'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import Firebase from "./firebase"
 import Login from "./pages/login"
+import "typeface-roboto"
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
