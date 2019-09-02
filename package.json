@@ -10,6 +10,7 @@
     "react-dom": "^16.8.0",
     "react-firebase-hooks": "^2.1.0",
     "react-router-dom": "^5.0.1",
+    "typeface-roboto": "^0.0.75",
     "use-global-hook": "^0.1.8"
   },
   "scripts": {
