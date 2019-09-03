@@ -4,7 +4,7 @@ import useGlobalHook from "use-global-hook";
 import * as actions from "../actions";
 
 const initialState = {
-  counter: 0
+  status:true
 };
 
 const useGlobal = useGlobalHook(React, initialState, actions);
